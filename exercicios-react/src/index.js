@@ -6,6 +6,13 @@ import MultiElementos from "./components/MultiElementos";
 import FamiliaSilva from "./components/FamiliaSilva";
 import Familia from "./components/Familia";
 import Membro from "./components/Membro";
+import ComponentComFuncao from "./components/ComponentComFuncao";
+import Pai from "./components/Pai";
+import ComponenteClasse from "./components/ComponentClasse";
+import Contador from "./components/Contador";
+import Hooks from "./components/Hooks";
+
+
 const elemento = document.getElementById('root');
 ReactDOM.render
 ( 
@@ -22,6 +29,11 @@ ReactDOM.render
       <Membro nome="Marcos" />
       <Membro nome="Mauricio" />
     </Familia>
+    <ComponentComFuncao/>
+    <Pai/>
+    <ComponenteClasse value="Sou um componente de classe com propriedades e comunicação direta."/>
+    <Contador numeroInicial={0}/>
+    <Hooks/>
   </div>,
   elemento
 );
